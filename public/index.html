@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelleo | Your Travel Companion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+
+    <nav class="nav">
+      <a class="brand" href="/">Travelleo ✦</a>
+
+      <div class="language-box">
+        <button class="language-btn" id="languageBtn">English ▾</button>
+        <div class="language-menu" id="languageMenu">
+          <button data-lang="en">English</button>
+          <button data-lang="te">తెలుగు</button>
+          <button data-lang="hi">हिन्दी</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow" id="eyebrow">DISCOVER YOUR NEXT ESCAPE</p>
+
+      <h1 id="heroTitle">
+        Where will your<br><em>story</em> take you?
+      </h1>
+
+      <p class="intro" id="intro">
+        Find the best stays, hidden gems, local flavours and travel details
+        for any destination — all in one place.
+      </p>
+
+      <form id="search-form" class="search-box">
+        <label class="sr-only" for="destination">Destination</label>
+        <span>⌖</span>
+
+        <input
+          id="destination"
+          maxlength="80"
+          placeholder="Try Hyderabad, Goa, Paris..."
+          required
+        >
+
+        <button type="submit" id="searchButton">
+          Plan my trip <span>→</span>
+        </button>
+      </form>
+
+      <p class="helper" id="helper">
+        Searches are powered by live travel information
+      </p>
+    </section>
+
+    <section class="feature-grid">
+      <article>
+        <span>🏨</span>
+        <h2 id="featureHotels">Stays</h2>
+        <p id="featureHotelsText">Hotels that suit your journey</p>
+      </article>
+
+      <article>
+        <span>📍</span>
+        <h2 id="featurePlaces">Explore</h2>
+        <p id="featurePlacesText">Unmissable places and sights</p>
+      </article>
+
+      <article>
+        <span>🍴</span>
+        <h2 id="featureRestaurants">Eat local</h2>
+        <p id="featureRestaurantsText">Restaurants worth visiting</p>
+      </article>
+
+      <article>
+        <span>🚗</span>
+        <h2 id="featureTravel">Get there</h2>
+        <p id="featureTravelText">Helpful travel guidance</p>
+      </article>
+    </section>
+
+    <section id="status" class="status" aria-live="polite" hidden></section>
+    <section id="results" class="results" aria-live="polite" hidden></section>
+
+  </main>
+
+  <footer>
+    Made for the curious traveller ✦ Travelleo
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
